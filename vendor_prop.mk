@@ -61,6 +61,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.cne.feature=1
 
+# Make data selection stick in dual SIM devices
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.radio.aosp_usr_pref_sel=true
+
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.gralloc.enable_fb_ubwc=1 \
