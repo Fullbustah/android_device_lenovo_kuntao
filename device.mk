@@ -46,6 +46,7 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8953 \
     audio.r_submix.default \
     audio.usb.default \
+    libaacwrapper \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing
@@ -101,7 +102,9 @@ PRODUCT_PACKAGES += \
     hwcomposer.msm8953 \
     libqdMetaData.system \
     libtinyxml \
-    memtrack.msm8953
+    memtrack.msm8953 \
+    libdisplayconfig \
+    libnl
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl \
@@ -157,6 +160,11 @@ PRODUCT_COPY_FILES += \
 # Healthd
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-service
+
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
 
 # IMS
 PRODUCT_PACKAGES += \
@@ -379,6 +387,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service
+
+# Wi-Fi Display
+PRODUCT_BOOT_JARS += \
+    WfdCommon
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
