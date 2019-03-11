@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/potato_kuntao.mk
+    $(LOCAL_DIR)/bootleg_kuntao.mk
