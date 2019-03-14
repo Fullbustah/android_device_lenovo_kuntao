@@ -47,7 +47,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
-    vendor.camera.hal1.packagelist=com.skype.raider,com.android.facelock,com.google.android.talk \
+    vendor.camera.hal1.packagelist=com.skype.raider,com.android.facelock,com.google.android.talk, com.instagram.android \
+    camera.hal1.packagelist=com.skype.raider,com.android.facelock,com.google.android.talk, com.instagram.android \
     persist.vendor.camera.display.umax=1920x1080 \
     persist.vendor.camera.display.lmax=1280x720 \
     camera.lowpower.record.enable=1 \
