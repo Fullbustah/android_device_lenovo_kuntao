@@ -30,7 +30,7 @@ $(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
 
 DEVICE_MAINTAINERS := "Fullbustah"
 BOOTLEGGERS_BUILD_TYPE :="Shishufied"
-TARGET_PICK_BOOTANIMATION := 5,8,9
+TARGET_PICK_BOOTANIMATION :="5,8,9"
 
 # Inherit device configuration
 $(call inherit-product, device/lenovo/kuntao/device.mk)
