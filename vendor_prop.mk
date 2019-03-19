@@ -78,7 +78,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
-    drm.service.enabled=1
+    drm.service.enabled=true
 
 # Factory reset protection
 PRODUCT_PROPERTY_OVERRIDES += \
