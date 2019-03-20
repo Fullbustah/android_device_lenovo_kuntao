@@ -339,6 +339,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ShishuOTA
 
+# TextClassifier smart selection model files
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
+
 # Telephony
 PRODUCT_PACKAGES += \
     telephony-ext
