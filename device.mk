@@ -156,7 +156,6 @@ PRODUCT_COPY_FILES += \
 
 # Healthd
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
 
 # IMS
@@ -337,8 +336,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
 #ShishuOTA
-    PRODUCT_PACKAGES += \
-        ShishuOTA
+PRODUCT_PACKAGES += \
+    ShishuOTA
+
+# TextClassifier smart selection model files
+PRODUCT_PACKAGES += \
+    textclassifier.bundle1
 
 # Telephony
 PRODUCT_PACKAGES += \
