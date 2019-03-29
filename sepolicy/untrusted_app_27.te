@@ -1,0 +1,15 @@
+allow untrusted_app_27 {
+ bg_boot_complete_prop
+ bg_daemon_prop
+ bluetooth_prop
+ bootloader_boot_reason_prop
+ boottime_prop
+ cnd_vendor_prop
+ console_silent_prop
+ ctl_LKCore_prop
+ ctl_atfwd_prop
+ ctl_bootanim_prop
+ ctl_bugreport_prop
+ ctl_console_prop
+ runtime_event_log_tags_file}:file { r_file_perms };
+

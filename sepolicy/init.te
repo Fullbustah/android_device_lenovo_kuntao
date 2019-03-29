@@ -1,0 +1,67 @@
+allow init kernel:system { module_request };
+
+allow init sysfs:dir { write };
+allow init system_file:dir { relabelfrom };
+
+#============= init ==============
+allow init {	
+ audioserver
+ bootanim
+ cameraserver
+ cnd
+ fsck
+ hal_alarm_qti_default
+ hal_audio_default
+ hal_bluetooth_qti
+ hal_camera_default
+ hal_cas_default
+ hal_configstore_default
+ hal_drm_default
+ hal_drm_clearkey
+ hal_drm_widevine
+ hal_dpmQmiMgr
+ hal_fingerprint_default
+ hal_gatekeeper_default
+ hal_graphics_allocator_default
+ hal_graphics_composer_default
+ hal_health_default
+ hal_imsrtp
+ hal_keymaster_default
+ hal_light_default
+ hal_memtrack_default
+ hal_nfc_default
+ hal_power_default
+ hal_rcsservice
+ hal_sensors_default
+ hal_usb_default
+ hal_vibrator_default
+ hal_wifi_supplicant_default
+ healthd
+ hwservicemanager
+ ims
+ ipacm
+ logd
+ mediaserver
+ netd
+ netmgrd
+ qti
+ qti_init_shell
+ rild
+ servicemanager
+ surfaceflinger
+ thermal-engine
+ time_daemon
+ tombstoned
+ toolbox
+ tzdatacheck
+ ueventd
+ vdc
+ vendor_init
+ vndservicemanager
+ vold
+ wificond
+ zygote}:process { noatsecure };
+
+
+
+
