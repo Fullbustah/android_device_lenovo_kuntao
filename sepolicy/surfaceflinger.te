@@ -1,8 +1,1 @@
 allow surfaceflinger crash_dump:process { noatsecure };
-
-
-
-
-
-
-

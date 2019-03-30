@@ -1,4 +1,4 @@
-allow untrusted_app{
+allow poweroffalarm_app {
  bg_boot_complete_prop
  bg_daemon_prop
  bluetooth_prop
