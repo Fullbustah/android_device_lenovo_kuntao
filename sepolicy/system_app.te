@@ -1,5 +1,0 @@
-allow system_app {
- bg_boot_complete_prop
- bg_daemon_prop}:file { r_file_perms };
-
-

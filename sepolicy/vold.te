@@ -1,5 +1,0 @@
-allow vold {
- fsck
- sdcardd
- vold_prepare_subdirs}:process { noatsecure };
-
