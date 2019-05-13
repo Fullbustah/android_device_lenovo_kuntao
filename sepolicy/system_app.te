@@ -1,11 +1,5 @@
 allow system_app {
  bg_boot_complete_prop
- bg_daemon_prop
- bootloader_boot_reason_prop
- boottime_prop
- cnd_vendor_prop
- console_silent_prop
- ctl_atfwd_prop
- ctl_bootanim_prop
- ctl_console_prop
- ctl_LKCore_prop }:file { r_file_perms };
+ bg_daemon_prop}:file { r_file_perms };
+
+

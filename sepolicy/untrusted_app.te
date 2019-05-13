@@ -21,26 +21,12 @@ allow untrusted_app{
  ctl_qcrild_prop
  ctl_restart_prop
  ctl_rildaemon_prop
- ctl_sigstop_prop
- ctl_start_prop
- ctl_stop_prop
- ctl_vendor_hbtp_prop
- ctl_vendor_imsrcsservice_prop
- ctl_vendor_mmid_prop
- ctl_vendor_netmgrd_prop
- ctl_vendor_port-bridge_prop
- ctl_vendor_qmuxd_prop
- ctl_vendor_rild_prop
- ctl_vendor_rmt_storage_prop
- ctl_vendor_wigigsvc_prop
- device_logging_prop
- dumpstate_options_prop
- firstboot_prop
- fm_prop
- fpnav_prop
- fst_prop
- graphics_vulkan_prop
- hvdcp_opti_prop
- proc_vmstat
  runtime_event_log_tags_file
- vendor_camera_prop }:file { r_file_perms };
+ vendor_camera_prop}:file { r_file_perms };
+
+
+
+
+
+
+

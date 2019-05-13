@@ -1,22 +1,14 @@
 allow init kernel:system { module_request };
 
-allow init sysfs:dir { create_dir_perms };
-allow init sysfs:file { create_file_perms };
+allow init sysfs:dir { write };
 allow init system_file:dir { relabelfrom };
 
 #============= init ==============
-allow init {
- adbd	
- adsprpcd
- atfwd
+allow init {	
  audioserver
  bootanim
- bootstat
  cameraserver
  cnd
- dpmd
- drmserver
- energyawareness
  fsck
  hal_alarm_qti_default
  hal_audio_default
@@ -30,7 +22,6 @@ allow init {
  hal_dpmQmiMgr
  hal_fingerprint_default
  hal_gatekeeper_default
- hal_gnss_qti
  hal_graphics_allocator_default
  hal_graphics_composer_default
  hal_health_default
@@ -39,45 +30,26 @@ allow init {
  hal_light_default
  hal_memtrack_default
  hal_nfc_default
- hal_perf_default
  hal_power_default
  hal_rcsservice
  hal_sensors_default
  hal_usb_default
  hal_vibrator_default
- hal_wifi_default
  hal_wifi_supplicant_default
  healthd
  hwservicemanager
  ims
- incidentd
- installd
  ipacm
- irsc_util
- keystore
- lmkd
- location
  logd
- mediacodec
- mediadrmserver
- mediaextractor
- mediametrics
  mediaserver
- mm-qcamerad
- msm_irqbalanced
  netd
  netmgrd
  qti
  qti_init_shell
- rfs_access
  rild
- rmt_storage
  servicemanager
- smart_charger
  surfaceflinger
- tee
  thermal-engine
- thermalserviced
  time_daemon
  tombstoned
  toolbox
@@ -85,11 +57,11 @@ allow init {
  ueventd
  vdc
  vendor_init
- vendor_per_mgr
- vfmService
  vndservicemanager
  vold
- wcnss_service
  wificond
- wifidisplayhalservice_qti
  zygote}:process { noatsecure };
+
+
+
+

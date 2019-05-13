@@ -7,4 +7,4 @@ allow mm-qcamerad system_server:unix_stream_socket { read write };
 
 set_prop(mm-qcamerad, vendor_camera_prop)
 
-allow mm-qcamerad vendor_camera_data_file:file { r_file_perms create_file_perms };
+allow mm-qcamerad vendor_camera_data_file:file { creat };
