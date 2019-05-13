@@ -26,17 +26,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
 # Inherit some common Bootleggers stuff.
-$(call inherit-product, vendor/bootleggers/config/common_full_phone.mk)
-
-DEVICE_MAINTAINERS := "Fullbustah"
-BOOTLEGGERS_BUILD_TYPE :="Shishufied"
-TARGET_PICK_BOOTANIMATION :="5,8,9"
+$(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lenovo/kuntao/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := bootleg_kuntao
+PRODUCT_NAME := potato_kuntao
 PRODUCT_DEVICE := kuntao
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := Lenovo P2a42
