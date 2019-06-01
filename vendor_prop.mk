@@ -136,6 +136,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.sib16_support=1 \
     persist.vendor.data.mode=concurrent
 
+#Storaged
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.storaged.event.interval=99999
+
 # Time services
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.delta_time.enable=true
