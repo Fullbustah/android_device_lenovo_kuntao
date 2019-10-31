@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/bootleg_kuntao.mk
+
+COMMON_LUNCH_CHOICES := \
+		bootleg_kuntao-eng \
+		bootleg_kuntao-user \
+		bootleg_kuntao-userdebug
