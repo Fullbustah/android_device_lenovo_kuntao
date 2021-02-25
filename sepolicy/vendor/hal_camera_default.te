@@ -1,0 +1,5 @@
+dontaudit hal_camera_default hal_power_hwservice:hwservice_manager find;
+
+binder_call(hal_camera_default, hal_power_default);
+
+set_prop(hal_camera_default, vendor_video_prop);

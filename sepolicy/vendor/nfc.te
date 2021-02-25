@@ -1,0 +1,2 @@
+#allow nfc to access gpuservice
+binder_call(nfc, gpuservice);

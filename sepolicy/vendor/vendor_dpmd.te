@@ -1,0 +1,1 @@
+get_prop(vendor_dpmd, ctl_stop_prop);
