@@ -19,7 +19,7 @@
 
 ## Device Picture 
 
-![Lenovo P2](http://cdn2.gsmarena.com/vv/pics/lenovo/lenovo-p2-1.jpg "Lenovo P2")
+![Lenovo P2](https://fdn2.gsmarena.com/vv/pics/lenovo/lenovo-p2-2.jpg "Lenovo P2")
 
 ## Copyright
 
