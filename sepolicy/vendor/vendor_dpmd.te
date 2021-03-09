@@ -1,1 +1,1 @@
-get_prop(vendor_dpmd, ctl_stop_prop);
+allow vendor_dpmd ctl_stop_prop:property_service set;
